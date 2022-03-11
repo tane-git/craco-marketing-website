@@ -1,0 +1,117 @@
+@import '../theme/theme.less';
+// @import '../../../../node_modules/antd/lib/style/themes/default.less';
+
+// >>> ANTD PROPS 
+:global {
+  .ant-btn-default {
+    &:hover {
+      color: @sq-text-color;
+      border-color: @btn-default-border;
+      background: @sq-gray-2;
+    }
+  }
+  
+  .ant-btn-text {
+      color: @sq-primary-blue-1;
+    &:hover {
+      color: @sq-primary-blue-1;
+      background:rgba(@sq-primary-blue-1, 0.1);
+      border-color: transparent;
+    }
+  }
+
+  .ant-btn-link:hover > span {
+    text-decoration: underline;
+  }
+
+  // Trying to style Gradient & Outline button (using dashed) but border not showing gradient...
+  .ant-btn-dashed {
+    border-style: solid;
+    // alternative border color until I can get gradient working
+    border-color: rgba(@sq-primary-blue-1, 0.5)
+  }
+
+  .ant-btn-dashed :is(span, p, i) {
+    background: @sq-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .ant-btn-dashed:hover {
+    background: @sq-gradient-background;
+    // alternative border color until I can get gradient working
+    border-color: rgba(@sq-primary-pink-1, 0.5)
+  }
+
+  .ant-btn-dashed::before {
+  // .ant-btn-dashed {
+    content: '';
+    border-width: 0;
+    padding: 1px;
+    background: @sq-gradient;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+}
+
+// >>> SUBQUERY PROPS
+.outlined {
+  background: transparent; 
+  border-color: @sq-primary-blue-1;
+  color: @sq-primary-blue-1;
+
+  &:hover {
+    background: rgba(@sq-primary-blue-1, 0.1);
+    border-color: @sq-primary-blue-1;
+    color: @sq-primary-blue-1;
+    // not sure why I have to re-declare border-color and color
+  }
+}
+
+.gradient {
+  color: white;
+  background: @sq-gradient;
+  &:hover {
+    color: white;
+    background: @sq-gradient-reverse;
+  }
+}
+
+// CANT GET GRADIENT MASK TO WORK PROPERLY
+
+// .gradientOutlined:hover {
+//   background: @sq-gradient-background;
+// }
+
+// Using new style for Gradient & Outline button
+// .gradientOutlined {
+//   border-style: solid;
+//   // content: '';
+//   // border-width: 0;
+//   // background: @sq-gradient;
+//   // -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+//   -webkit-mask-composite: destination-out;
+//   // mask-composite: exclude;
+// }
+
+// .gradientOutlined :is(span, p, i) {
+//   background: @sq-gradient;
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+// .gradientOutlined:hover {
+//   background: @sq-gradient-background
+// }
+
+// .gradientOutlined::before {
+// // .ant-btn-dashed {
+//   content: '';
+//   border-width: 0;
+//   padding: 1px;
+//   background: @sq-gradient;
+//   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+//   -webkit-mask-composite: destination-out;
+//   mask-composite: exclude;
+// }
