@@ -20,8 +20,34 @@
 
 .background {
   height: 5393px;
-  width: 1440;
+  // ERROR: width style isnt working...
+  // width: 1440;
+  // max-width: 1440;
+  // overflow: hidden;
+  // width: 100%;
+  // display: flex;
   // background: url('/background/set1.svg');
   // background: url('/set1.svg');
-  background: url('./background/set1.svg');
+  // background: url('./background/set1.svg') url('./background/set2.svg') no-repeat;
+  // background: url('./background/Background.svg') no-repeat center;
+
+  // TRYING PNG
+  background: url('./background/Background.png') no-repeat center; 
+}
+
+// These dont have to be in seperate divs...
+.background1{
+  height: 2283px;
+  background: url('./background/set1.svg') no-repeat;
+}
+.background2 {
+  height: 1559px;
+  background: url('./background/set2.svg') no-repeat;
+}
+
+// testing transparent background to see if its better quality...
+.transparentBackground {
+  height: 5393px;
+  background: url('./background/transparentBackground.svg') center no-repeat,
+  #FFFFFF;
 }
