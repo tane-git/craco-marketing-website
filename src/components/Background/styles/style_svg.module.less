@@ -1,0 +1,128 @@
+.background {
+  // FIGMA CODE:
+  // position: relative;
+  // width: 1440px;
+  height: 5393px;
+  background: #FFFFFF;
+
+  // MY CODE:
+  // width: 100%;
+  width: 100vw;
+
+  // hide overflow
+  overflow: hidden;
+
+
+  // width: 1440px;
+  // max-width: 1440px;
+  // overflow: hidden;
+  // display: block;
+}
+
+.leftBackground {
+  background-image: url('../images/svgs/Left_Icons.svg');
+  // background: url('../images/svgs/Left_Icons.svg') no-repeat;
+  background-repeat: no-repeat;
+
+  // FIGMA CODE:
+  position: absolute;
+  // width: 1433.75px;
+  // height: 3736.82px;
+  // left: -720px;
+
+  // MY CODE:
+  // width should be 1433.76 - 720 =
+  // width: 713.76px;
+  // cant get width right.. try full width?
+  width: 100vw;
+  // changing 'left:' to 0 because this image is different to figma:
+  left: 0px;
+  top: 515.18px;
+  // 1085 × 4491
+  // width: 1085px;
+  height: 4491px;
+}
+
+.rightBackground {
+  // background-image: url('../images/svgs/Right_Icons.svg');
+  background: url('../images/svgs/Right_Icons.svg') no-repeat;
+  background-position: right;
+
+  // FIGMA CODE:
+  position: absolute;
+  // width: 1270.83px;
+  // height: 3212px;
+  // height: 100vh;
+  // left: 909.86px;
+  top: 554px;
+  
+  // 1196 × 4566 px
+  // width: 1196px;
+  width: 100vw;
+  height: 4566px;
+
+  // trying to position div to the right, responsively...
+  right: 0px;
+}
+
+// .ellipse1 {
+//   // trying to hide part of div that isn't within allowed width
+//   // overflow: hidden;
+
+//   // following from figma:
+//   position: absolute;
+//   width: 748px;
+//   height: 748px;
+//   left: -463px;
+//   top: 1487px;
+
+//   background: #7BACE7;
+//   filter: blur(800px);
+// }
+
+// .ellipse18 {
+//   position: absolute;
+//   width: 713px;
+//   height: 517px;
+//   left: 1044px;
+//   top: 1168px;
+  
+//   background: rgba(99, 115, 129, 0.5);
+//   filter: blur(800px);
+// }
+
+// .polygon2 {
+//   position: absolute;
+//   width: 855.08px;
+//   height: 855.08px;
+//   left: 535.78px;
+//   top: 1980px;
+  
+//   background: rgba(255, 255, 255, 0.05);
+//   box-shadow: 0px 0px 20px rgba(211, 240, 253, 0.3), inset 0px 4px 250px rgba(255, 255, 255, 0.5);
+//   transform: rotate(83.62deg); 
+// }
+
+// .polygon3 {
+//   position: absolute;
+//   width: 1087.21px;
+//   height: 1025.91px;
+//   left: -172.68px;
+//   top: 515.18px;
+  
+//   background: rgba(255, 255, 255, 0.05);
+//   box-shadow: 0px 0px 20px rgba(211, 240, 253, 0.3), inset 0px 4px 250px rgba(255, 255, 255, 0.5);
+//   transform: matrix(-0.5, 0.86, 0.86, 0.5, 0, 0); 
+// }
+
+// .polygon4 {
+//   position: absolute;
+//   width: 851.44px;
+//   height: 977.91px;
+//   left: 2180.68px;
+//   top: 2860.01px;
+
+//   background: rgba(255, 255, 255, 0.05);
+//   box-shadow: 0px 0px 20px rgba(211, 240, 253, 0.3), inset 0px 4px 250px rgba(255, 255, 255, 0.5);
+//   transform: rotate(119.6deg);
+// }
