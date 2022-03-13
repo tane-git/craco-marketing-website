@@ -2,9 +2,9 @@ import React from 'react';
 
 import {
   Background,
-  // Footer,
   Header,
   Content,
+  Footer,
 } from './components';
 import './styles/index.less';
 
@@ -13,8 +13,7 @@ function App() {
     <Background>
       <Header />
       <Content />
-      {/* <Welcome /> */}
-      {/* <Footer /> */}
+      <Footer />
     </Background>
   );
 }
