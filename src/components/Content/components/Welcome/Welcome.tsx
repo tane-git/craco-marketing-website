@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './style/style.module.less';
-import Robots from './images/subQueryRobots.svg';
 
 export const Welcome: React.FC = () => {
   return (

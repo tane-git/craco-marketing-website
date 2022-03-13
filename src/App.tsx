@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   Background,
-  Footer,
+  // Footer,
   Header,
   Content,
 } from './components';
