@@ -20,14 +20,19 @@ export const Background: React.FC<IProps> = ({
     console.log('scrolling')
     let now = new Date().getTime()
     if (now - lastCall > 1000) {
-      console.log('delegating')
-      setLastCall(now)
+      // console.log('delegating')
+      // setLastCall(now)
       setDelegator(delegator === delegator0 ? delegator1 : delegator0)
       // setRobot(robot === styles.iRobot ? '' : styles.iRobot)
       // setRobot1(robot1 === styles.iRobot ? '' : styles.iRobot)
+      console.log('Current Scroll y: ', window.scrollY);
+
+      // if (window.scrollY % 10 === 0) {
+        // setDelegator(delegator === delegator0 ? delegator1 : delegator0)
+      // }
     }
   }
-
+ 
   useEffect(() => {
     // window.addEventListener('scroll', handleScroll)
     var timer: NodeJS.Timeout | null = null;
@@ -35,7 +40,7 @@ export const Background: React.FC<IProps> = ({
         if(timer !== null) {
             clearTimeout(timer);        
         }
-        timer = setTimeout(handleScroll, 10);
+        timer = setTimeout(handleScroll, 75);
     }, false);
   })
 
