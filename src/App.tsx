@@ -1,20 +1,20 @@
-import { Layout } from 'antd';
 import React from 'react';
 
 import {
   Background,
-  Header
+  Footer,
+  Header,
+  Content,
 } from './components';
 import './styles/index.less';
 
 function App() {
   return (
-    <>
-      <Background />
-      <Layout>
-        <Header />
-      </Layout>
-    </>
+    <Background>
+      <Header />
+      {/* <Content /> */}
+      {/* <Footer /> */}
+    </Background>
   );
 }
 
