@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './styles/style.module.less'
-import delegator from './images/robots/delegator.svg'
+import delegator0  from './images/robots/delegator.svg'
+import delegator1 from './images/robots/delegator1.svg'
 import indexer from './images/robots/indexer.svg'
 
 export interface IProps {
@@ -10,6 +11,16 @@ export interface IProps {
 export const Background: React.FC<IProps> = ({
   children
 }) => {
+  const [delegator, setDelegator] = useState(delegator0)
+  
+  const handleScroll = () => {
+    delegator === delegator0 ? setDelegator(delegator1) : setDelegator(delegator0)
+  }
+  
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+  })
+
   return (
     <div className={styles.background}>
       {children}
