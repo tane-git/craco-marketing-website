@@ -1,10 +1,12 @@
 import React from 'react';
-import { Layout } from 'antd';
+import { Welcome } from './components/Welcome/'
+// import { Welcome } from '../Welcome';
 
 export const Content: React.FC = () => {
   return (
-    <Layout.Content>
-      test
-    </Layout.Content>
+    <div>
+      <Welcome />
+      {/* <Sections /> */}
+    </div>
   )
 }

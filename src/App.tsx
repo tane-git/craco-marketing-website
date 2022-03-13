@@ -12,7 +12,8 @@ function App() {
   return (
     <Background>
       <Header />
-      {/* <Content /> */}
+      <Content />
+      {/* <Welcome /> */}
       {/* <Footer /> */}
     </Background>
   );
