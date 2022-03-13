@@ -11,12 +11,20 @@ export interface IProps {
 export const Background: React.FC<IProps> = ({
   children
 }) => {
-  const [delegator, setDelegator] = useState(delegator0)
-  
+  const [delegator, setDelegator] = useState('')
+  const [lastCall, setLastCall] = useState(0)
+
   const handleScroll = () => {
-    delegator === delegator0 ? setDelegator(delegator1) : setDelegator(delegator0)
+    console.log('scrolling')
+    let now = new Date().getTime()
+    if (now - lastCall > 1000) {
+      console.log('delegating')
+      setLastCall(now)
+      // setDelegator(delegator === delegator0 ? delegator1 : delegator0)
+      setDelegator(delegator === styles.iRobot ? '' : styles.iRobot)
+    }
   }
-  
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   })
@@ -32,7 +40,8 @@ export const Background: React.FC<IProps> = ({
          <img src={indexer} alt="A SubQuery Indexer Robot" /> 
         </div>
         <div className={styles.delegator}>
-         <img src={delegator} alt="A SubQuery Delegator Robot" /> 
+         <img src={delegator0} alt="A SubQuery Delegator Robot" className={delegator} /> 
+         {/* <img src={delegator1} alt="A SubQuery Delegator Robot" className={delegator} />  */}
         </div>
       </div>
     </div>
