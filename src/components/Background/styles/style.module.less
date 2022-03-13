@@ -1,3 +1,13 @@
+// PNGS
+// @leftBackground: url('../images/pngs/leftBackground.png');
+// @centerBackground: url('../images/pngs/centerBackground.png');
+// @rightBackground: url('../images/pngs/rightBackground.png');
+
+// SVGS
+@leftBackground: url('../images/svgs/leftBackground.svg');
+@centerBackground: url('../images/svgs/centerBackground.svg');
+@rightBackground: url('../images/svgs/rightBackground.svg');
+
 .background {
   width: 100vw;
   height: 5393px; 
@@ -7,8 +17,7 @@
 }
 
 .leftBackground {
-  background-image: url('../images/pngs/leftBackground.png');
-
+  background-image: @leftBackground;
   width: 1440px;
   height: 5393px; 
 
@@ -20,7 +29,7 @@
 }
 
 .centerBackground {
-  background-image: url('../images/pngs/centerBackground.png');
+  background-image: @centerBackground; 
 
   width: 3440px;
   height: 5393px; 
@@ -32,7 +41,7 @@
 }
 
 .rightBackground {
-  background-image: url('../images/pngs/rightBackground.png');
+  background-image: @rightBackground;
 
   width: 1440px;
   height: 5393px; 
