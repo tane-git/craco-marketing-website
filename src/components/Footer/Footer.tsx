@@ -1,10 +1,14 @@
 import React from 'react'
-import { Layout } from 'antd';
+import { IconLinks } from './components'
+import styles from './style/style.module.less'
 
 export const Footer: React.FC = () => {
   return (
-    <Layout.Footer>
-      Join the Open Web3 Data Revolution
-    </Layout.Footer>
+    <div className={styles.footer} >
+      <div className={styles.socialMedias} >
+        <span className={styles.text}>Join the Open Web3 Data Revolution</span>
+        <IconLinks />
+      </div>
+    </div>
   )
 }
