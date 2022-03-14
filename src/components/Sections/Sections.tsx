@@ -1,8 +1,9 @@
 import React from 'react'
-import { How } from './How'
-import { Protocols } from './Protocols'
 import styles from './style.module.less'
 import { What } from './What'
+import { Protocols } from './Protocols'
+import { How } from './How'
+import { Why } from './Why'
 
 
 export const Sections: React.FC = () => {
@@ -11,7 +12,7 @@ export const Sections: React.FC = () => {
       <What />
       <Protocols />
       <How />
-      {/* <Why /> */}
+      <Why />
     </div>
   ) 
 }

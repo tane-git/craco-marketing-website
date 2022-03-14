@@ -1,0 +1,29 @@
+<svg width="120" height="121" viewBox="0 0 120 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_di_2020_19508)">
+<circle cx="60" cy="60.4492" r="40" fill="white" fill-opacity="0.05" shape-rendering="crispEdges"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M74 50.8634V68.8634C74 69.968 73.1046 70.8634 72 70.8634H64.8284C63.7676 70.8634 62.7501 71.2848 62 72.035L60 74.035L58 72.035C57.2499 71.2848 56.2324 70.8634 55.1716 70.8634H48C46.8954 70.8634 46 69.968 46 68.8634V50.8634C46 49.7588 46.8954 48.8634 48 48.8634H72C73.1046 48.8634 74 49.7588 74 50.8634ZM48 72.8634C45.7909 72.8634 44 71.0725 44 68.8634V50.8634C44 48.6543 45.7909 46.8634 48 46.8634H72C74.2091 46.8634 76 48.6543 76 50.8634V68.8634C76 71.0725 74.2091 72.8634 72 72.8634H64.8284C64.298 72.8634 63.7893 73.0741 63.4142 73.4492L60.7071 76.1563C60.3166 76.5468 59.6834 76.5468 59.2929 76.1563L56.5858 73.4492C56.2107 73.0741 55.702 72.8634 55.1716 72.8634H48Z" fill="#3AA0FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M74 54.8634H46V56.8634H74V54.8634Z" fill="#3AA0FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M74 62.8634H46V64.8634H74V62.8634Z" fill="#3AA0FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48 51.8634C48 52.4157 48.4477 52.8634 49 52.8634H61C61.5523 52.8634 62 52.4157 62 51.8634C62 51.3111 61.5523 50.8634 61 50.8634H49C48.4477 50.8634 48 51.3111 48 51.8634Z" fill="#3AA0FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48 59.8634C48 60.4157 48.4477 60.8634 49 60.8634H71C71.5523 60.8634 72 60.4157 72 59.8634C72 59.3111 71.5523 58.8634 71 58.8634H49C48.4477 58.8634 48 59.3111 48 59.8634Z" fill="#3AA0FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48 67.8634C48 68.4157 48.4477 68.8634 49 68.8634H65C65.5523 68.8634 66 68.4157 66 67.8634C66 67.3111 65.5523 66.8634 65 66.8634H49C48.4477 66.8634 48 67.3111 48 67.8634Z" fill="#3AA0FF"/>
+<defs>
+<filter id="filter0_di_2020_19508" x="0" y="0.449219" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.826389 0 0 0 0 0.942854 0 0 0 0 0.991667 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2020_19508"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2020_19508" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="400"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_2020_19508"/>
+</filter>
+</defs>
+</svg>
