@@ -1,4 +1,5 @@
 import React from 'react'
+import { How } from './How'
 import { Protocols } from './Protocols'
 import styles from './style.module.less'
 import { What } from './What'
@@ -9,7 +10,7 @@ export const Sections: React.FC = () => {
     <div className={styles.sections}>
       <What />
       <Protocols />
-      {/* <How /> */}
+      <How />
       {/* <Why /> */}
     </div>
   ) 
