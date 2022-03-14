@@ -7,6 +7,7 @@ export const Content: React.FC = () => {
     <div>
       <Welcome />
       {/* <Sections /> */}
+      {/* <CallToAction /> */}
     </div>
   )
 }
